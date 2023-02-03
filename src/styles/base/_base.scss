@@ -1,0 +1,12 @@
+html {
+    font-size: 10px;
+}
+
+body {
+    @extend %font-primary;
+    @include font($size: 1.3rem, $height: 1.4rem, $weight: 400, $style: normal);
+}
+
+.common-bg {
+    background: url(noise_lines_transparent@2X.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
+}

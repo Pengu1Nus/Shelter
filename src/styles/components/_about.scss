@@ -1,0 +1,24 @@
+.about {
+    padding-top: 80px;
+}
+
+.about__flex {
+    @extend %flex-alignment;
+    justify-content: space-around;
+}
+
+.about__info {
+    max-width: 430px;
+}
+
+.about__title {
+    max-width: 360px;
+}
+
+.about__text {
+    margin: 0;
+    padding-top: 25px;
+    @extend %font-additional;
+    @include font($size: 1.5rem, $height: 2.4rem);
+    color: $title-primary-color;
+}

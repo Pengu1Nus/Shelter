@@ -1,0 +1,10 @@
+.button {
+    width: 207px;
+    height: 52px;
+    background-color: $btn-color-normal-active;
+    border-radius: 100px;
+    border: none;
+    @extend %font-primary;
+    @include font($size: 1.7rem, $height: 2.2rem);
+    color: $btn-text-color;
+}

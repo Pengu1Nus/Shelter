@@ -1,0 +1,17 @@
+%transition {
+    transition: all .3s ease-out;
+}
+
+%font-primary {
+    font-family: 'Georgia', sans-serif;
+}
+
+%font-additional {
+    font-family: 'Arial', sans-serif;
+}
+
+%flex-alignment {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

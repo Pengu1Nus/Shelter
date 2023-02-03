@@ -1,0 +1,5 @@
+.title {
+    @extend %font-primary;
+    @include font($size: 3.5rem, $height: 4.5rem);
+    color: $header-main-color;
+}
