@@ -1,0 +1,35 @@
+.help {
+    padding: 80px 0 100px;
+}
+
+.help__title {
+    display: block;
+    justify-content: center;
+    max-width: 308px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.help__info {
+    padding: 60px 87px 100px;
+}
+
+.help__list {
+    @extend %flex-alignment;
+    flex-wrap: wrap;
+    gap: 120px;
+    margin: 0;
+}
+
+.help__list-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.help__list-text {
+    margin: 0;
+    margin-top: 30px;
+    @include font($size: 2rem, $height: 2.3rem);
+    color: $header-main-color;
+}
