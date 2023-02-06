@@ -1,0 +1,75 @@
+.footer {
+    background: $header-footer-bg-color;
+    padding-top: 40px;
+}
+
+.footer__flex {
+    @extend %flex-alignment;
+}
+
+.footer__contacts {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 16px;
+}
+
+.footer__title {
+    @include font($size: 3.5rem, $height: 4.5rem);
+    color: $text-primary-color;
+    width: 278px;
+}
+
+.footer__contacts-email {
+    @include font($size: 2rem, $height: 2.3rem);
+    color: $primary-color;
+    display: flex;
+    align-items: center;
+}
+
+.footer__contacts-email > img {
+    padding-right: 20px;
+}
+
+.footer__contacts-tel {
+    @include font($size: 2rem, $height: 2.3rem);
+    color: $primary-color;
+    display: flex;
+    align-items: center;
+}
+
+.footer__contacts-tel > img {
+    padding-right: 20px;
+}
+
+.footer__address {
+    width: 300px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 16px;
+}
+
+.footer__address-entrance {
+    @include font($size: 2rem, $height: 2.3rem);
+    color: $primary-color;
+    display: flex;
+    align-items: center;
+}
+
+.footer__address-entrance > img {
+    padding-right: 20px;
+}
+
+.footer__address-place {
+    @include font($size: 2rem, $height: 2.3rem);
+    color: $primary-color;
+    display: flex;
+    align-items: center;
+}
+
+.footer__address-place > img {
+    padding-right: 20px;
+}
