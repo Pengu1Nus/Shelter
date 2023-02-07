@@ -7,8 +7,9 @@
     @extend %flex-alignment;
 }
 
-.footer__contacts {
+.footer__content {
     height: 250px;
+    width: 310px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -21,55 +22,13 @@
     width: 278px;
 }
 
-.footer__contacts-email {
+.footer__data {
     @include font($size: 2rem, $height: 2.3rem);
     color: $primary-color;
     display: flex;
     align-items: center;
 }
 
-.footer__contacts-email > img {
-    padding-right: 20px;
-}
-
-.footer__contacts-tel {
-    @include font($size: 2rem, $height: 2.3rem);
-    color: $primary-color;
-    display: flex;
-    align-items: center;
-}
-
-.footer__contacts-tel > img {
-    padding-right: 20px;
-}
-
-.footer__address {
-    width: 300px;
-    height: 250px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding-top: 16px;
-}
-
-.footer__address-entrance {
-    @include font($size: 2rem, $height: 2.3rem);
-    color: $primary-color;
-    display: flex;
-    align-items: center;
-}
-
-.footer__address-entrance > img {
-    padding-right: 20px;
-}
-
-.footer__address-place {
-    @include font($size: 2rem, $height: 2.3rem);
-    color: $primary-color;
-    display: flex;
-    align-items: center;
-}
-
-.footer__address-place > img {
+.footer__data > img {
     padding-right: 20px;
 }
