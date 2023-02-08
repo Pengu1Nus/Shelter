@@ -8,3 +8,9 @@
     @include font($size: 1.7rem, $height: 2.2rem);
     color: $btn-text-color;
 }
+
+.button:hover {
+    transition: all .3s;
+    background-color: $btn-color-hover;
+    border-color: $btn-color-hover;
+}

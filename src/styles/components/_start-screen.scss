@@ -4,6 +4,15 @@
 
 .start-screen__flex {
     @extend %flex-alignment;
+    @include media-tablet {
+        flex-direction: column;
+        width: 460px;
+        margin: 0 auto;
+    }
+    @include media-mobile {
+        width: auto;
+        align-items:center;
+    }
 }
 
 .start-screen__info {
@@ -13,6 +22,9 @@
     align-self: flex-start;
     padding-top: 163px;
     max-width: 460px;
+    @include media-tablet {
+        padding-top: 0;
+    }
 }
 
 .start-screen__title {
@@ -20,6 +32,10 @@
     @include font($size: 4.4rem, $height: 5.7rem);
     color: $text-primary-color;
     max-width: 310px;
+    @include media-mobile {
+        @include font($size: 2.5rem, $height: 3.2rem);
+        text-align: center;
+    }
 }
 
 .start-screen__text {
@@ -28,4 +44,40 @@
     color: $links-text-color-normal;
     max-width: 460px;
     margin: 0;
+    @include media-mobile {
+        max-width: 300px;
+        text-align: center;
+    }
+}
+
+.start-screen__button {
+    @include media-tablet {
+        margin: 0 auto;
+    }
+}
+
+.start-screen__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include media-tablet {
+        padding-top: 100px;
+        padding-left: 80px;
+    }
+    @include media-mobile {
+        padding-top: 105px;
+
+    }
+}
+.start-screen__img-puppy {
+    @include media-tablet {
+        display: block;
+        height: 593px;
+        margin: 0 auto;
+    }
+    @include media-mobile {
+        display: block;
+        width: 260px;
+        height: auto;
+    }
 }
