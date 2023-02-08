@@ -11,7 +11,31 @@
 
 .pets__mid {
     @extend %flex-alignment;
+    flex-wrap: wrap;
     padding-top: 60px;
+}
+
+@include media-tablet {
+    .element-3 {
+        display: none;
+    }
+}
+
+@include media-mobile {
+    .element-2,
+    .element-3 {
+        display: none;
+    }
+
+    .pets__left-arrow {
+        order: 2;
+        margin-left: 58px;
+    }
+
+    .pets__right-arrow {
+        order: 3;
+        margin-right: 58px;
+    }
 }
 
 .arrow {
@@ -23,6 +47,9 @@
     font-size: 2rem;
     text-align: center;
     background-color: inherit;
+    @include media-mobile {
+        margin-top: 20px;
+    }
 }
 
 .pets__card {
@@ -54,8 +81,15 @@
     margin-top: 60px;
     display: flex;
     justify-content: center;
+    @include media-mobile {
+        margin-top: 42px;
+    }
 }
 
 .pets__button {
     max-width: 261px;
+    @include media-mobile {
+        width: 260px;
+        overflow: hidden;
+    }
 }

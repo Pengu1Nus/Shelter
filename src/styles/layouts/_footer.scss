@@ -5,6 +5,7 @@
 
 .footer__flex {
     @extend %flex-alignment;
+    flex-wrap: wrap;
 }
 
 .footer__content {
@@ -31,4 +32,15 @@
 
 .footer__data > img {
     padding-right: 20px;
+}
+
+@include media-tablet {
+    .footer__img {
+        padding-top: 65px;
+        margin: 0 auto;
+    }
+    .footer__img > img {
+        width: 260px;
+        height: auto;
+    }
 }

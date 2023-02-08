@@ -17,11 +17,12 @@
 .help__list {
     @extend %flex-alignment;
     flex-wrap: wrap;
-    gap: 120px;
     margin: 0;
 }
 
 .help__list-item {
+    width: 170px;
+    height: 113px;
     display: flex;
     flex-direction: column;
     align-items: center;

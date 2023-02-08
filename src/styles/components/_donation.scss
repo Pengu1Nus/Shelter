@@ -6,6 +6,17 @@
 .donation__flex {
     @extend %flex-alignment;
     justify-content: center;
+    @include media-tablet {
+        flex-direction: column-reverse;
+    }
+}
+
+.donation__img > img {
+    @include media-mobile {
+        display: block;
+        width: 260px;
+        height: 135.2px;
+    }
 }
 
 .donation__info {
