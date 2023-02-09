@@ -53,3 +53,33 @@
     color: $links-color-active-hover;
     cursor: default;
 }
+
+
+/* Our-pets page */
+.our-pets-header {
+    padding: 30px 0;
+}
+
+.our-pets-header__logo-top {
+    color: $header-main-color;
+}
+
+.our-pets-header__logo-bot {
+    color: $header-add-color;
+}
+
+.our-pets-header__nav-link {
+    color: $header-main-color;
+}
+
+.our-pets-header__nav-link_active {
+    color: $header-add-color;
+}
+
+.our-pets-header__nav-link_active:hover {
+    color: $header-add-color;
+}
+
+.our-pets-header__nav-link:hover {
+    color: $header-add-color;
+}

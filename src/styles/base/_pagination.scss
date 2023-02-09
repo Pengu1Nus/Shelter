@@ -1,0 +1,30 @@
+.pagination__button {
+    width: 52px;
+    height: 52px;
+    border-radius: 100px;
+    @include font($size: 2rem, $height: 2.3rem);
+}
+
+.pagination__button:not(:last-child) {
+    margin-right: 20px;
+    @include media-mobile {
+        margin-right: 10px;
+    }
+}
+
+.pagination__button-inactive {
+    border: 2px solid $pagination-btn-inactive;
+    background-color: transparent;
+    cursor: default;
+    color: $pagination-btn-inactive;
+}
+
+.pagination__button-inactive:hover {
+    background-color: transparent;
+    border: 2px solid $pagination-btn-inactive;
+}
+
+.pagination__button-normal {
+    background-color: transparent;
+    border: 2px solid $btn-color-normal-active;
+}

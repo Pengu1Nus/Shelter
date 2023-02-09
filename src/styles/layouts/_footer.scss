@@ -44,3 +44,49 @@
         height: auto;
     }
 }
+
+/* Our pets */
+.our-pets-footer {
+    @include media-tablet {
+        padding-top: 30px;
+    }
+}
+
+.our-pets-footer__content {
+    @include media-tablet {
+        padding-top: 0;
+    }
+}
+
+.our-pets-footer__contacts {
+    @include media-tablet {
+        padding-left: 34px;
+    }
+    @include media-mobile {
+        padding-left: 0;
+    }
+}
+
+.our-pets-footer__address {
+    @include media-tablet {
+        padding-right: 34px;
+    }
+}
+
+.our-pets-footer__content:not(:first-child) {
+    @include media-mobile {
+        margin-top: 40px;
+    }
+}
+
+.our-pets-footer__title {
+    @include media-mobile {
+        text-align: center;
+    }
+}
+
+.our-pets-footer__data {
+    @include media-mobile {
+        margin: 0 auto;
+    }
+}

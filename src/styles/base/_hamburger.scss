@@ -34,3 +34,17 @@
     top: calc(50% - 1px);
     left: 0;
 }
+
+/* Our pets */
+.our-pets-hamburger {
+    &:before {
+        background-color: #000000;
+    }
+    &:after {
+        background-color: #000000;
+    }
+}
+.our-pets-hamburger__line {
+    background-color: #000000;
+
+}
