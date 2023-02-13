@@ -98,7 +98,3 @@ window.onload = function() {
         renderArticlesToDom();
     }
 }
-
-const renderArticlesToDom = () => {
-
-}
