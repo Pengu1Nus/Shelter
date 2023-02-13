@@ -13,6 +13,10 @@
     @extend %flex-alignment;
     flex-wrap: wrap;
     padding-top: 60px;
+
+    @include media-mobile {
+        justify-content: space-around;
+    }
 }
 
 .element-3 {

@@ -1,6 +1,9 @@
 .donation {
     padding: 80px 0 100px;
     background: $background-color-light;
+    @include media-mobile {
+        padding: 42px 0;
+    }
 }
 
 .donation__flex {
@@ -22,10 +25,16 @@
 .donation__info {
     max-width: 380px;
     padding-left: 30px;
+    @include media-mobile {
+        padding: 0 10px;
+    }
 }
 
 .donation__title {
     max-width: 300px;
+    @include media-mobile {
+        text-align: center;
+    }
 }
 
 .donation__bank-name {
@@ -34,24 +43,38 @@
     @include font($size: 1.5rem, $height: 1.7rem);
     color: $header-main-color;
     margin-top: 20px;
+    @include media-mobile {
+        text-align: center;
+    }
 }
 
 .donation__card {
     margin-top: 20px;
     padding: 10px 15px 10px 60px;
-    @extend %font-primary;
-    @include font($size: 2rem, $height: 2.3rem);
-    color: $header-main-color;
     background-color: $primary-color;
     border-radius: 9px;
     position: relative;
     text-align: right;
+    @include media-mobile {
+        padding-left: 30px;
+    }
+}
+
+.donation__card-num {
+    @extend %font-primary;
+    @include font($size: 2rem, $height: 2.3rem);
+    color: $header-main-color;
+    @include media-mobile {
+        @include font($size: 1.5rem, $height: 1.7rem);
+        letter-spacing: 0.06em;
+    }
+
 }
 
 .donation__card-img {
     position: absolute;
     left: 15px;
-    top: 10px;
+    top: 7.5px;
 }
 
 .donation__text {

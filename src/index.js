@@ -1,5 +1,5 @@
 import { Modal } from './script/Modal';
-/*
+
 const data = [
     {
         id: 1,
@@ -91,7 +91,7 @@ const data = [
         parasites: 'none',
     },
 ]
-*/
+
 window.onload = function() {
     // Generate modal from Modal Class
     addToolsClickHandler();
@@ -103,7 +103,6 @@ const addToolsClickHandler = () => {
         button.addEventListener('click', generateToolsModal);
     });
 };
-
 
 const generateToolsModal = () => {
     renderModalWindow('Test content');
