@@ -13,6 +13,7 @@
     width: 952px;
     height: 552px;
     color: $modal-text-color;
+    background-color: $modal-bg-color;
     margin: 0 auto;
     @include media-tablet {
         width: 682px;

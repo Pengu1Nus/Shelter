@@ -1,5 +1,5 @@
-import { Artice } from './script/Artice';
 import { Modal } from './script/Modal';
+/*
 const data = [
     {
         id: 1,
@@ -91,10 +91,25 @@ const data = [
         parasites: 'none',
     },
 ]
-
+*/
 window.onload = function() {
-    console.log('Hello world!');
-    if (data) {
-        renderArticlesToDom();
-    }
+    // Generate modal from Modal Class
+    addToolsClickHandler();
+}
+
+const addToolsClickHandler = () => {
+    let buttons = document.querySelectorAll('.pets__card-btn');
+    buttons.forEach(button => {
+        button.addEventListener('click', generateToolsModal);
+    });
+};
+
+
+const generateToolsModal = () => {
+    renderModalWindow('Test content');
+}
+
+const renderModalWindow = (content) => {
+    let modal = new Modal('pets__modal');
+    modal.buildModal(content);
 }
