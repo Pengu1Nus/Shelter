@@ -19,14 +19,14 @@
     }
 }
 
-.element-3 {
+div[data-id="3"] {
     @include media-tablet {
         display: none;
     }
 }
 
-.element-2,
-.element-3 {
+div[data-id="2"],
+div[data-id="3"] {
     @include media-mobile {
         display: none;
     }
@@ -119,16 +119,16 @@
     }
 }
 
-.our-pets-element-7,
-.our-pets-element-8 {
+div[data-id="7"],
+div[data-id="8"] {
     @include media-tablet {
         display: none;
     };
 }
 
-.our-pets-element-4,
-.our-pets-element-5,
-.our-pets-element-6 {
+div[data-id="4"],
+div[data-id="5"],
+div[data-id="6"] {
     @include media-mobile {
         display: none;
     }

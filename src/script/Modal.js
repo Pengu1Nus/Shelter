@@ -2,7 +2,6 @@ export class Modal {
     constructor(classes) {
         this.classes = classes;
         this.modal = '';
-        this.modalContent = '';
         this.modalCloseBtn = '';
         this.overlay = '';
     }
@@ -13,9 +12,6 @@ export class Modal {
 
         // Modal 
         this.modal = this.createDomNode(this.modal, 'div', 'modal', this.classes);
-
-        // Modal Content
-        this.modalContent = this.createDomNode(this.modalContent, 'div', 'modal__content');
         
         // Close Button
         this.modalCloseBtn = this.createDomNode(this.modalCloseBtn, 'div', 'modal__close-btn');
@@ -39,16 +35,15 @@ export class Modal {
 
     setContent(content) {
         if(typeof content === 'string') {
-            this.modalContent.innerHTML = content;
+            this.modal.innerHTML = content;
         } else {
-            this.modalContent.innerHTML = '';
-            this.modalContent.appendChild(content);
+            this.modal.innerHTML = '';
+            this.modal.append(content);
         }
     }
 
     appendModalElements() {
-        this.modal.append(this.modalCloseBtn);
-        this.modal.append(this.modalContent);
+        this.modal.prepend(this.modalCloseBtn);
         this.overlay.append(this.modal);
     }
     bindEvents() {
