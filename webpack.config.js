@@ -16,7 +16,6 @@ module.exports = (env, options) => {
     },
     devServer: {
       open: true,
-      //host: '192.168.31.199',
       static: {
         directory: path.join(__dirname, './dist'),
       },
