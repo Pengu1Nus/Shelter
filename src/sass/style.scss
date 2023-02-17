@@ -1,12 +1,12 @@
-// Normalize
+
 @import 'base/normalize';
 
-// Abstract
+
 @import "abstract/constants";
 @import "abstract/mixins";
 @import "abstract/placeholders";
 
-//Base
+
 @import "base/base";
 @import "base/buttons";
 @import "base/title";
@@ -14,12 +14,12 @@
 @import "base/pagination";
 @import "base/modal";
 
-//Layouts
+
 @import "layouts/header";
 @import "layouts/footer";
 @import "layouts/wrapper";
 
-//Components
+
 @import "components/start-screen";
 @import "components/about";
 @import "components/pets";
