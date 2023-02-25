@@ -15,6 +15,7 @@
     height: 552px;
     color: $modal-text-color;
     margin: 0 auto;
+    letter-spacing: 0.06em;
     @include media-tablet {
         width: 682px;
         height: 402px;
@@ -30,6 +31,7 @@
     height: 500px;
     background-color: $modal-bg-color;
     box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+    border-radius: 9px;
     @extend %flex-alignment;
     @include media-tablet {
         width: 630px;
@@ -42,8 +44,8 @@
 }
 
 .modal__img {
-    width: 500px;
-    height: 500px;
+    margin: 0 auto;
+    height: 400px;
     @include media-tablet {
         width: 350px;
         height: 350px;
@@ -92,7 +94,6 @@
     }
     @include media-mobile {
         text-align: justify;
-        letter-spacing: 0.06em;
     }
 }
 
@@ -119,12 +120,30 @@
 }
 
 .modal__close-btn {
+    position: relative;
+    display: block;
     width: 52px;
     height: 52px;
     border: 2px solid $btn-color-normal-active;
     border-radius: 100px;
-    //background: url('../../images/icons/') no-repeat center;
-    //background-color: transparent;
+    background-color: transparent;
     margin-left: auto;
     cursor: pointer;
+    &:before, 
+    &:after {
+        position: absolute;
+        content: "";
+        width: 2px;
+        height: 22px;
+        background-color: $btn-text-color;
+        top: 28%;
+        left: 49.5%;
+        transform: translateX(-50%);
+    }
+    &:before {
+        transform: rotate(45deg);
+    }
+    &:after {
+        transform: rotate(-45deg);
+    }
 }

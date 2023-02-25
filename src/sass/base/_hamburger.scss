@@ -3,6 +3,7 @@
     background: $primary-color;
     height: 2px;
     width: 100%;
+    transition: all .5s ease-in-out;
 }
 
 .hamburger {
@@ -14,18 +15,22 @@
     position: relative;
     @include media-mobile {
         display: inline-block;
+        position: relative;
+        z-index: 2;
     }
     &:before {
         @extend %hamburger__line;
         content: '';
         top: 0;
         left: 0;
+        transition: all .5s ease-in-out;
     }
     &:after {
         @extend %hamburger__line;
         content: '';
         bottom: 0;
         left: 0;
+        transition: all .5s ease-in-out;
     }
 }
 
@@ -33,6 +38,21 @@
     @extend %hamburger__line;
     top: calc(50% - 1px);
     left: 0;
+}
+
+.header.open .hamburger__line {
+    transform: rotate(90deg);
+    transition: all .5s ease-in-out;
+}
+.header.open .hamburger {
+    &:before {
+        transform: rotate(90deg) translateX(14px) translateY(-14px);
+        transition: all .5s ease-in-out;
+    }
+    &:after {
+        transform: rotate(90deg) translateX(-14px) translateY(14px);
+        transition: all .5s ease-in-out;
+    }
 }
 
 /* Our pets */
